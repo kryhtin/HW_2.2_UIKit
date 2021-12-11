@@ -80,24 +80,24 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3lP-Zu-uSP">
-                                        <rect key="frame" x="88" y="1" width="206" height="112"/>
+                                        <rect key="frame" x="177" y="-1" width="150" height="112"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Bv-0V-hgZ">
-                                                <rect key="frame" x="-2" y="0.0" width="210" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="154" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="PBS-4R-vK1"/>
                                                 </constraints>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="utD-T9-cxy">
-                                                <rect key="frame" x="-2" y="41" width="210" height="31"/>
+                                                <rect key="frame" x="-2" y="41" width="154" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="fsO-CR-Lgn"/>
                                                 </constraints>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tbf-FY-TVt">
-                                                <rect key="frame" x="-2" y="82" width="210" height="31"/>
+                                                <rect key="frame" x="-2" y="82" width="154" height="31"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="150" id="BKH-kq-7RA"/>
                                                 </constraints>
@@ -115,7 +115,6 @@
                                     <constraint firstItem="kjW-1D-Cm1" firstAttribute="leading" secondItem="zKg-yL-twb" secondAttribute="trailing" constant="10" id="1hV-mR-aZI"/>
                                     <constraint firstItem="zKg-yL-twb" firstAttribute="centerY" secondItem="1Qq-hi-ZDg" secondAttribute="centerY" id="97H-vW-ANT"/>
                                     <constraint firstItem="zKg-yL-twb" firstAttribute="leading" secondItem="1Qq-hi-ZDg" secondAttribute="leading" constant="15" id="DJ8-De-4je"/>
-                                    <constraint firstItem="3lP-Zu-uSP" firstAttribute="leading" secondItem="kjW-1D-Cm1" secondAttribute="trailing" constant="12" id="VnA-FT-bcL"/>
                                     <constraint firstItem="kjW-1D-Cm1" firstAttribute="centerY" secondItem="zKg-yL-twb" secondAttribute="centerY" id="bd5-rk-w8m"/>
                                     <constraint firstItem="zKg-yL-twb" firstAttribute="centerY" secondItem="3lP-Zu-uSP" secondAttribute="centerY" id="btj-Ot-nhg"/>
                                     <constraint firstItem="3lP-Zu-uSP" firstAttribute="centerY" secondItem="1Qq-hi-ZDg" secondAttribute="centerY" id="cdz-00-7aQ"/>
