@@ -17,53 +17,23 @@ class ViewController: UIViewController {
   @IBOutlet weak var greenSlider: UISlider!
   @IBOutlet weak var blueSlider: UISlider!
 
-  private let minimumValue: Float = 0
-  private let maximumValue: Float = 1
-  private let visible: CGFloat = 1
-
   override func viewDidLoad() {
     super.viewDidLoad()
-
-    redSlider.value = maximumValue
-    redSlider.minimumValue = minimumValue
-    redSlider.maximumValue = maximumValue
-
-    greenSlider.value = minimumValue
-    greenSlider.minimumValue = minimumValue
-    greenSlider.maximumValue = maximumValue
-
-    blueSlider.value = minimumValue
-    blueSlider.minimumValue = minimumValue
-    blueSlider.maximumValue = maximumValue
-
-    redLabel.text = String(redSlider.value)
-    greenLabel.text = String(greenSlider.value)
-    blueLabel.text = String(blueSlider.value)
-
     setViewBackgroundColor()
   }
 
   @IBAction func redSliderAction() {
-    redLabel.text = String(
-      format: "%.2f",
-      redSlider.value
-    )
+    redLabel.text = roundLabelText(redSlider.value)
     setViewBackgroundColor()
   }
 
   @IBAction func greenSliderAction() {
-    greenLabel.text = String(
-      format: "%.2f",
-      greenSlider.value
-    )
+    greenLabel.text = roundLabelText(greenSlider.value)
     setViewBackgroundColor()
   }
 
   @IBAction func blueSliderAction() {
-    blueLabel.text = String(
-      format: "%.2f",
-      blueSlider.value
-    )
+    blueLabel.text = roundLabelText(blueSlider.value)
     setViewBackgroundColor()
   }
 
@@ -72,8 +42,12 @@ class ViewController: UIViewController {
       red: CGFloat(redSlider.value),
       green: CGFloat(greenSlider.value),
       blue: CGFloat(blueSlider.value),
-      alpha: visible
+      alpha: 1.0
     )
+  }
+  
+  private func roundLabelText(_ value: Float) -> String {
+    String(format: "%.2f", value)
   }
 }
 
